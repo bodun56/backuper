@@ -1,0 +1,12 @@
+[Unit]
+Description=Backuper network off Service
+After=syslog.target
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/systemctl stop network
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target 
