@@ -13,7 +13,7 @@ BuildArch:      noarch
 
 BuildRoot:      %(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 
-Requires: rsync cifs-utils ntfs-3g ntfsprogs samba-client
+Requires: rsync cifs-utils ntfs-3g ntfsprogs samba-client systemd
 
 %description
 Backup manager from samba servers
